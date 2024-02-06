@@ -1,0 +1,154 @@
+CRITICAL - 2023-12-13 15:35:59 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-13 15:36:14 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-13 15:36:51 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-13 15:37:35 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-13 15:38:33 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-13 15:43:35 --> Class "Locale" not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2023-12-13 08:46:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'keycloak', 'password', 'keycloak', 5435, '', 0)
+#1 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('trias.mutaqin@i...', 'email', Array, NULL, 'email')
+#6 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'trias.mutaqin@i...', Array, Array)
+#7 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\app\Controllers\SignupController.php(25): CodeIgniter\Controller->validate(Array)
+#9 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(927): App\Controllers\SignupController->store()
+#10 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Commands\Server\rewrite.php(46): require_once('D:\\project-PDLa...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('trias.mutaqin@i...', 'email', Array, NULL, 'email')
+#5 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'trias.mutaqin@i...', Array, Array)
+#6 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\app\Controllers\SignupController.php(25): CodeIgniter\Controller->validate(Array)
+#8 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(927): App\Controllers\SignupController->store()
+#9 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#10 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Commands\Server\rewrite.php(46): require_once('D:\\project-PDLa...')
+#13 {main}
+CRITICAL - 2023-12-13 08:46:44 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('trias.mutaqin@i-3.co.id', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'trias.mutaqin@i-3.co.id', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\SignupController.php(25): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SignupController->store()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-12-13 08:47:12 --> mysqli_sql_exception: Table 'ci4.users' doesn't exist in D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.c...', 'email', Array, NULL, 'email')
+#6 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.c...', Array, Array)
+#7 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\app\Controllers\SignupController.php(25): CodeIgniter\Controller->validate(Array)
+#9 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(927): App\Controllers\SignupController->store()
+#10 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Commands\Server\rewrite.php(46): require_once('D:\\project-PDLa...')
+#14 {main}
+CRITICAL - 2023-12-13 08:47:12 --> Call to a member function getRow() on bool
+in SYSTEMPATH\Validation\Rules.php on line 142.
+ 1 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.com', 'email', [...], null, 'email')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\SignupController.php(25): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SignupController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-12-13 08:53:09 --> mysqli_sql_exception: Table 'ci4.users' doesn't exist in D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.c...', 'email', Array, NULL, 'email')
+#6 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.c...', Array, Array)
+#7 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\app\Controllers\SignupController.php(25): CodeIgniter\Controller->validate(Array)
+#9 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(927): App\Controllers\SignupController->store()
+#10 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Commands\Server\rewrite.php(46): require_once('D:\\project-PDLa...')
+#14 {main}
+CRITICAL - 2023-12-13 08:53:09 --> Call to a member function getRow() on bool
+in SYSTEMPATH\Validation\Rules.php on line 142.
+ 1 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.com', 'email', [...], null, 'email')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\SignupController.php(25): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SignupController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-12-13 08:53:34 --> mysqli_sql_exception: Table 'ci4.users' doesn't exist in D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.c...', 'email', Array, NULL, 'email')
+#6 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.c...', Array, Array)
+#7 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\app\Controllers\SignupController.php(25): CodeIgniter\Controller->validate(Array)
+#9 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(927): App\Controllers\SignupController->store()
+#10 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\project-PDLaravel1\ci\auth-keycloak-codeigniter\system\Commands\Server\rewrite.php(46): require_once('D:\\project-PDLa...')
+#14 {main}
+CRITICAL - 2023-12-13 08:53:34 --> Call to a member function getRow() on bool
+in SYSTEMPATH\Validation\Rules.php on line 142.
+ 1 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('iaszaen@gmail.com', 'email', [...], null, 'email')
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('email', 'email', 'iaszaen@gmail.com', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\SignupController.php(25): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SignupController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
